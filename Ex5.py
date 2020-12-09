@@ -1,0 +1,7 @@
+inNumbers=input("Enter Numbers")
+mylist=inNumbers.split(',')
+mytuple=tuple(inNumbers)
+mylist2=list(inNumbers.split(','))
+print('List: ',mylist)
+print('Tuple:',mytuple)
+print(mylist2)
