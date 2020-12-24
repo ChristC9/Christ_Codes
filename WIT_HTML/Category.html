@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="photo">
+    <script id="anima-hotspots-script" src="hotspots.js"></script>
+    <script id="anima-overrides-script" src="overrides.js"></script>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+        @font-face {
+            font-family: "ArgentumSans-Medium";
+            font-style: normal;
+            font-weight: 500;
+            src: url('https://anima-uploads.s3.amazonaws.com/5e0788b895d5a6d41303c25f/ArgentumSans-Medium.ttf') format("truetype");
+        }
+        
+        @font-face {
+            font-family: "ArgentumSans-Regular";
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://anima-uploads.s3.amazonaws.com/5e0788b895d5a6d41303c25f/ArgentumSans-Regular.ttf') format("truetype");
+        }
+        
+        @font-face {
+            font-family: "ArgentumSans-Light";
+            font-style: normal;
+            font-weight: 300;
+            src: url('https://anima-uploads.s3.amazonaws.com/5e0788b895d5a6d41303c25f/ArgentumSans-Light.ttf') format("truetype");
+        }
+        
+        .anima-component-wrapper a,
+        .anima-screen a {
+            text-decoration: none;
+            display: contents;
+        }
+        
+        .anima-full-width-a {
+            width: 100%;
+        }
+        
+        .anima-full-height-a {
+            height: 100%;
+        }
+        
+        .anima-screen textarea:focus,
+        .anima-screen input:focus {
+            outline: none;
+        }
+        
+        .anima-screen *,
+        .anima-component-wrapper * {
+            box-sizing: border-box;
+        }
+        
+        .anima-screen div {
+            -webkit-text-size-adjust: none;
+        }
+        
+        .anima-container-center-vertical,
+        .anima-container-center-horizontal {
+            pointer-events: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .anima-container-center-vertical {
+            align-items: center;
+            height: 100%;
+        }
+        
+        .anima-container-center-horizontal {
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .anima-container-center-vertical>*,
+        .anima-container-center-horizontal>* {
+            pointer-events: auto;
+            flex-shrink: 0;
+        }
+        
+        .anima-component-wrapper,
+        .anima-screen {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-all;
+            word-break: break-word;
+        }
+        
+        .anima-auto-animated div {
+            opacity: 0;
+            position: absolute;
+            --anima-z-index: -1;
+        }
+        
+        .anima-auto-animated .anima-container-center-vertical,
+        .anima-auto-animated .anima-container-center-horizontal {
+            opacity: 1;
+        }
+        
+        .anima-overlay {
+            position: absolute;
+            opacity: 0;
+            display: none;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        
+        .anima-animate-appear {
+            opacity: 0;
+            display: block;
+            animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+        }
+        
+        .anima-animate-disappear {
+            opacity: 1;
+            display: block;
+            animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+        }
+        
+        .anima-animate-nodelay {
+            animation-delay: 0s;
+        }
+        
+        @keyframes anima-reveal {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .align-self-flex-start {
+            align-self: flex-start;
+        }
+        
+        .align-self-flex-end {
+            align-self: flex-end;
+        }
+        
+        .align-self-flex-center {
+            align-self: center;
+        }
+        
+        .anima-valign-text-middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .anima-valign-text-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .anima- input:focus {
+            outline: none;
+        }
+        
+        .anima-component-wrapper,
+        .anima-component-wrapper * {
+            pointer-events: none;
+        }
+        
+        .anima-component-wrapper a *,
+        .anima-component-wrapper a,
+        .anima-component-wrapper input,
+        .anima-component-wrapper video,
+        .anima-component-wrapper iframe,
+        .anima-listeners-active,
+        .anima-listeners-active * {
+            pointer-events: auto;
+        }
+        
+        .anima-hidden,
+        .anima-hidden * {
+            visibility: hidden;
+            pointer-events: none;
+        }
+        
+        .anima-smart-layers-pointers,
+        .anima-smart-layers-pointers * {
+            pointer-events: auto;
+            visibility: visible;
+        }
+        
+        .anima-component-wrapper.anima-not-ready,
+        .anima-component-wrapper.anima-not-ready * {
+            visibility: hidden !important;
+        }
+        
+        .anima-listeners-active-click,
+        .anima-listeners-active-click * {
+            cursor: pointer;
+        }
+        /* screen - categories-select */
+        
+        .argentumsans-regular-normal-concrete-17px {
+            color: var(--concrete);
+            font-family: 'ArgentumSans-Regular', Helvetica, Arial, serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        
+        .argentumsans-regular-normal-ship-gray-17px {
+            color: var(--ship-gray);
+            font-family: 'ArgentumSans-Regular', Helvetica, Arial, serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        
+        .categories-select {
+            background-color: rgba(255, 255, 255, 1.0);
+            height: 1080px;
+            position: relative;
+            width: 1920px;
+        }
+        
+        .categories-select .agriculture-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1269px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 510px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .art-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1259px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 561px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .choose-you-categories-C61RwL {
+            background-color: transparent;
+            color: var(--ship-gray);
+            font-family: 'ArgentumSans-Medium', Helvetica, Arial, serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            height: auto;
+            left: 1137px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: center;
+            top: 336px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .commerce-economic-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1034px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 510px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .con-password-C61RwL {
+            background-color: transparent;
+            height: 50px;
+            left: 1060px;
+            position: absolute;
+            top: 700px;
+            width: 447px;
+        }
+        
+        .categories-select .confirm-ShMq8S {
+            background-color: transparent;
+            bottom: calc(27.78% - 9px);
+            color: var(--concrete);
+            font-family: 'ArgentumSans-Regular', Helvetica, Arial, serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            height: 32px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            right: calc(49.59% - 40px);
+            text-align: center;
+            white-space: nowrap;
+            width: 80px;
+        }
+        
+        .categories-select .culture-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1034px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 561px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .div-bg-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 534px;
+            left: 954px;
+            position: absolute;
+            top: 289px;
+            width: 664px;
+        }
+        
+        .categories-select .education-hvAGCq {
+            background-color: transparent;
+            height: 24px;
+            left: calc(39.58% - 30px);
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: calc(50.00% - 12px);
+            white-space: nowrap;
+            width: 76px;
+        }
+        
+        .categories-select .ellipse-19-tfkzmy {
+            background-color: transparent;
+            height: 22px;
+            left: calc(22.79% - 5px);
+            position: absolute;
+            top: 0px;
+            width: 22px;
+        }
+        
+        .categories-select .ellipse-20-tfkzmy {
+            background-color: transparent;
+            height: 22px;
+            left: calc(45.58% - 10px);
+            position: absolute;
+            top: 0px;
+            width: 22px;
+        }
+        
+        .categories-select .ellipse-21-tfkzmy {
+            background-color: transparent;
+            height: 22px;
+            left: 0px;
+            position: absolute;
+            top: calc(30.66% - 7px);
+            width: 22px;
+        }
+        
+        .categories-select .ellipse-22-tfkzmy {
+            background-color: transparent;
+            height: 22px;
+            left: calc(22.79% - 5px);
+            position: absolute;
+            top: calc(30.66% - 7px);
+            width: 22px;
+        }
+        
+        .categories-select .ellipse-23-tfkzmy {
+            background-color: transparent;
+            height: 34px;
+            position: absolute;
+            right: calc(22.69% - 8px);
+            top: calc(24.37% - 8px);
+            width: 34px;
+        }
+        
+        .categories-select .entertainment-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1143px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 459px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .fashion-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1034px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 612px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .finances-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1428px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 459px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .fitness-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1032px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 459px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .group-1-C61RwL {
+            background-color: transparent;
+            height: 36px;
+            left: 1016px;
+            position: absolute;
+            top: 402px;
+            width: 139px;
+        }
+        
+        .categories-select .group-3-C61RwL {
+            background-color: transparent;
+            height: 36px;
+            left: 1296px;
+            position: absolute;
+            top: 402px;
+            width: 124px;
+        }
+        
+        .categories-select .health-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1459px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 408px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .nature-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1149px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 561px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .nav-C61RwL {
+            background-color: var(--ship-gray);
+            height: 80px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 1920px;
+        }
+        
+        .categories-select .others-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1259px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 612px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .path-61-tfkzmy {
+            background-color: transparent;
+            bottom: 9px;
+            height: 46px;
+            position: absolute;
+            right: 1px;
+            width: 49px;
+        }
+        
+        .categories-select .path-62-tfkzmy {
+            background-color: transparent;
+            bottom: 9px;
+            height: 62px;
+            position: absolute;
+            right: 24px;
+            width: 27px;
+        }
+        
+        .categories-select .path-63-tfkzmy {
+            background-color: transparent;
+            height: 220px;
+            left: 9px;
+            position: absolute;
+            top: 4px;
+            width: 246px;
+        }
+        
+        .categories-select .path-64-tfkzmy {
+            background-color: transparent;
+            bottom: 2px;
+            height: 13px;
+            position: absolute;
+            right: calc(19.78% - 8px);
+            width: 41px;
+        }
+        
+        .categories-select .path-65-tfkzmy {
+            background-color: transparent;
+            bottom: calc(34.10% - 7px);
+            height: 21px;
+            position: absolute;
+            right: calc(31.16% - 3px);
+            width: 11px;
+        }
+        
+        .categories-select .path-66-tfkzmy {
+            background-color: transparent;
+            bottom: calc(35.59% - 8px);
+            height: 21px;
+            position: absolute;
+            right: 76px;
+            width: 11px;
+        }
+        
+        .categories-select .path-67-tfkzmy {
+            background-color: transparent;
+            height: 18px;
+            position: absolute;
+            right: calc(21.59% - 6px);
+            top: calc(31.07% - 6px);
+            width: 26px;
+        }
+        
+        .categories-select .path-68-tfkzmy {
+            background-color: transparent;
+            height: 70px;
+            position: absolute;
+            right: calc(20.74% - 12px);
+            top: calc(40.22% - 28px);
+            width: 58px;
+        }
+        
+        .categories-select .path-69-tfkzmy {
+            background-color: transparent;
+            height: 102px;
+            position: absolute;
+            right: calc(28.76% - 7px);
+            top: calc(49.05% - 50px);
+            width: 23px;
+        }
+        
+        .categories-select .path-70-tfkzmy {
+            background-color: transparent;
+            height: 102px;
+            position: absolute;
+            right: calc(16.65% - 4px);
+            top: calc(47.12% - 48px);
+            width: 23px;
+        }
+        
+        .categories-select .path-71-tfkzmy {
+            background-color: transparent;
+            bottom: 10px;
+            height: 181px;
+            position: absolute;
+            right: calc(19.67% - 12px);
+            width: 60px;
+        }
+        
+        .categories-select .path-72-tfkzmy {
+            background-color: transparent;
+            bottom: 10px;
+            height: 140px;
+            position: absolute;
+            right: calc(18.52% - 5px);
+            width: 30px;
+        }
+        
+        .categories-select .path-73-tfkzmy {
+            background-color: transparent;
+            height: 97px;
+            position: absolute;
+            right: calc(19.92% - 11px);
+            top: calc(27.80% - 27px);
+            width: 53px;
+        }
+        
+        .categories-select .path-74-tfkzmy {
+            background-color: transparent;
+            bottom: 0px;
+            height: 13px;
+            position: absolute;
+            right: calc(24.27% - 10px);
+            width: 41px;
+        }
+        
+        .categories-select .photography-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1337px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 561px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .politics-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1149px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 612px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .rectangle-20-ShMq8S {
+            background-color: transparent;
+            border-radius: 10px;
+            height: calc(100.00% + 18px);
+            left: -7px;
+            position: absolute;
+            top: -6px;
+            width: calc(100.00% + 18px);
+        }
+        
+        .categories-select .rectangle-25-tfkzmy {
+            background-color: rgba(63, 61, 86, 1.0);
+            bottom: 9px;
+            height: 1px;
+            position: absolute;
+            right: 1px;
+            width: 288px;
+        }
+        
+        .categories-select .rectangle-26-tfkzmy {
+            background-color: rgba(230, 230, 230, 1.0);
+            height: 59px;
+            left: 11px;
+            position: absolute;
+            top: 11px;
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-27-tfkzmy {
+            background-color: var(--nobel);
+            height: 59px;
+            left: 11px;
+            position: absolute;
+            top: calc(37.86% - 22px);
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-28-tfkzmy {
+            background-color: var(--nobel);
+            height: 59px;
+            position: absolute;
+            right: calc(47.43% - 32px);
+            top: 11px;
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-29-tfkzmy {
+            background-color: rgba(230, 230, 230, 1.0);
+            height: 59px;
+            position: absolute;
+            right: calc(47.43% - 32px);
+            top: calc(37.86% - 22px);
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-30-tfkzmy {
+            background-color: var(--nobel);
+            height: 59px;
+            left: calc(27.70% - 19px);
+            position: absolute;
+            top: 11px;
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-31-tfkzmy {
+            background-color: var(--nobel);
+            height: 59px;
+            left: calc(27.70% - 19px);
+            position: absolute;
+            top: calc(37.86% - 22px);
+            width: 67px;
+        }
+        
+        .categories-select .rectangle-32-VyzZeT {
+            background-color: transparent;
+            border-radius: 10px;
+            height: calc(100.00% + 18px);
+            left: -9px;
+            position: absolute;
+            top: -6px;
+            width: calc(100.00% + 18px);
+        }
+        
+        .categories-select .rectangle-33-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1164px;
+            position: absolute;
+            top: 396px;
+            width: 123px;
+        }
+        
+        .categories-select .rectangle-34-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1293px;
+            position: absolute;
+            top: 447px;
+            width: 110px;
+        }
+        
+        .categories-select .rectangle-34-hvAGCq {
+            background-color: transparent;
+            border-radius: 10px;
+            height: calc(100.00% + 18px);
+            left: -9px;
+            position: absolute;
+            top: -6px;
+            width: calc(100.00% + 18px);
+        }
+        
+        .categories-select .rectangle-35-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1433px;
+            position: absolute;
+            top: 396px;
+            width: 108px;
+        }
+        
+        .categories-select .rectangle-36-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1007px;
+            position: absolute;
+            top: 447px;
+            width: 109px;
+        }
+        
+        .categories-select .rectangle-37-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1116px;
+            position: absolute;
+            top: 447px;
+            width: 176px;
+        }
+        
+        .categories-select .rectangle-38-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1400px;
+            position: absolute;
+            top: 447px;
+            width: 125px;
+        }
+        
+        .categories-select .rectangle-39-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1007px;
+            position: absolute;
+            top: 498px;
+            width: 235px;
+        }
+        
+        .categories-select .rectangle-40-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1242px;
+            position: absolute;
+            top: 498px;
+            width: 146px;
+        }
+        
+        .categories-select .rectangle-41-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1388px;
+            position: absolute;
+            top: 498px;
+            width: 104px;
+        }
+        
+        .categories-select .rectangle-42-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1007px;
+            position: absolute;
+            top: 549px;
+            width: 115px;
+        }
+        
+        .categories-select .rectangle-43-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1122px;
+            position: absolute;
+            top: 549px;
+            width: 108px;
+        }
+        
+        .categories-select .rectangle-44-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1232px;
+            position: absolute;
+            top: 549px;
+            width: 79px;
+        }
+        
+        .categories-select .rectangle-45-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1310px;
+            position: absolute;
+            top: 549px;
+            width: 162px;
+        }
+        
+        .categories-select .rectangle-46-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1007px;
+            position: absolute;
+            top: 600px;
+            width: 115px;
+        }
+        
+        .categories-select .rectangle-47-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1122px;
+            position: absolute;
+            top: 600px;
+            width: 113px;
+        }
+        
+        .categories-select .rectangle-48-C61RwL {
+            background-color: transparent;
+            border-radius: 10px;
+            height: 54px;
+            left: 1235px;
+            position: absolute;
+            top: 600px;
+            width: 105px;
+        }
+        
+        .categories-select .science-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1194px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 408px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .sports-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1321px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 459px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .technology-VyzZeT {
+            background-color: transparent;
+            height: 24px;
+            left: calc(41.18% - 36px);
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: calc(50.00% - 12px);
+            white-space: nowrap;
+            width: 88px;
+        }
+        
+        .categories-select .travel-C61RwL {
+            background-color: transparent;
+            height: auto;
+            left: 1415px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 510px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        .categories-select .undrawsele-ptions42hx-C61RwL {
+            background-color: transparent;
+            height: 371px;
+            left: 286px;
+            position: absolute;
+            top: 379px;
+            width: 496px;
+        }
+        
+        .categories-select .wit-project-C61RwL {
+            background-color: transparent;
+            color: var(--concrete);
+            font-family: 'ArgentumSans-Medium', Helvetica, Arial, serif;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 500;
+            height: auto;
+            left: 130px;
+            letter-spacing: 0.00px;
+            line-height: 22px;
+            position: absolute;
+            text-align: left;
+            top: 28px;
+            white-space: nowrap;
+            width: auto;
+        }
+        
+        :root {
+            --concrete: rgba(242, 242, 242, 1.0);
+            --nobel: rgba(180, 180, 180, 1.0);
+            --ship-gray: rgba(62, 62, 62, 1.0);
+        }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated.">
+</head>
+
+<body style="margin: 0;background: rgba(255,255,255,1.0);"><input type="hidden" id="anPageName" name="page" value="categories-select">
+    <div class="anima-container-center-horizontal">
+        <div class="categories-select anima-screen " data-id="70cafd4d-bdff-4ea1-b6f5-90cb55b6101d">
+            <div class="nav-C61RwL" data-id="21dd8aed-b079-4464-ad10-00e987f387c7"></div>
+            <div class="wit-project-C61RwL" data-id="2439e2e4-3d7b-471a-8a51-37ee7bf92e97">WIT Project</div><img class="div-bg-C61RwL" data-id="69ef1681-3a69-47fc-882b-c9c2784f0350" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/div-bg@1x.png">
+            <div
+                class="con-password-C61RwL" data-id="7bce2b59-0421-4742-beb6-98f22d012e17"><img class="rectangle-20-ShMq8S" data-id="f6d20567-765a-4c05-bee0-5672bc3ce4d8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-20@1x.png">
+                <div
+                    class="confirm-ShMq8S" data-id="c0b72fbe-edc4-4c86-9a79-e26efd38e989">Confirm</div>
+    </div>
+    <div class="choose-you-categories-C61RwL" data-id="ffb21384-d518-4958-8d30-f4d38aed8ed8">Choose your favourite categories</div>
+    <div class="undrawsele-ptions42hx-C61RwL" data-id="a2d2bc66-923d-4379-9edd-f9a5d6f0acf2"><img class="path-61-tfkzmy" data-id="2e6fe15c-cd4e-455f-966f-0f1c6e1858fe" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-61@1x.png">
+        <img
+            class="path-62-tfkzmy" data-id="6401214c-e375-46f0-8ce0-7522bc1a46c6" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-62@1x.png">
+            <div class="rectangle-25-tfkzmy" data-id="1f4f20c2-73ef-4cd4-b6cf-cfd9e7166aa7"></div><img class="path-63-tfkzmy" data-id="69e7f2d5-0f32-4a1d-9f29-a4ad318c0347" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-63@1x.png">
+            <div
+                class="rectangle-26-tfkzmy" data-id="1da19d77-b717-4a8a-be0b-1def9db14dd3"></div>
+    <div class="rectangle-27-tfkzmy" data-id="381ebc47-18d9-47d3-bead-3ee9aae314d6"></div>
+    <div class="rectangle-28-tfkzmy" data-id="f8f557bd-b195-45de-963c-54745ebc63fb"></div>
+    <div class="rectangle-29-tfkzmy" data-id="d3065ae1-a26f-4407-9cec-e1cad098ae6a"></div>
+    <div class="rectangle-30-tfkzmy" data-id="0977b386-5969-40cf-ba2c-227c974b28ea"></div>
+    <div class="rectangle-31-tfkzmy" data-id="7371120d-2c07-4088-97ce-08343f06e044"></div><img class="ellipse-19-tfkzmy" data-id="eae27bb1-59d4-4ea3-9e38-2cc05a0fbed0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/ellipse-19@1x.png">
+    <img
+        class="ellipse-20-tfkzmy" data-id="cf6b19b4-7e3d-4ca6-ab1b-b85bd2aba38a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/ellipse-19@1x.png"><img class="ellipse-21-tfkzmy" data-id="17fe40ee-4c46-41b5-b8a5-7c2f6d27b52f" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/ellipse-19@1x.png">
+        <img
+            class="ellipse-22-tfkzmy" data-id="8e3b2bad-a90f-4ac1-9ad9-905b9855297f" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/ellipse-19@1x.png"><img class="path-64-tfkzmy" data-id="7a416ab4-bb05-4dd2-9227-020966fdf113" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-64@1x.png">
+            <img
+                class="path-65-tfkzmy" data-id="65caaa4f-6b5c-4086-9ad1-51094f436618" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-65@1x.png"><img class="path-66-tfkzmy" data-id="0daab628-bec2-4793-acc6-5317b6736a7c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-66@1x.png">
+                <img
+                    class="ellipse-23-tfkzmy" data-id="14589847-92a1-4884-8b76-96364e28f100" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/ellipse-23@1x.png"><img class="path-67-tfkzmy" data-id="b16952fa-f84e-4f10-88e2-9f3af73b81c0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-67@1x.png">
+                    <img
+                        class="path-68-tfkzmy" data-id="89dc7ff1-6e58-4ac3-af7a-fbbd441e2534" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-68@1x.png"><img class="path-69-tfkzmy" data-id="7d7c730c-81cc-46a5-a872-44dd1bae8a98" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-69@1x.png">
+                        <img
+                            class="path-70-tfkzmy" data-id="c68f3b11-4916-409e-997d-8782810bc9e5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-70@1x.png"><img class="path-71-tfkzmy" data-id="838194a2-22da-4b36-bac1-c7e9742ef1e8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-71@1x.png">
+                            <img
+                                class="path-72-tfkzmy" data-id="0fce9e2d-4b5d-46fe-bc69-5f755263d7d8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-72@1x.png"><img class="path-73-tfkzmy" data-id="bd5cdbcd-80bf-49b2-a901-561f56d6e57b" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-73@1x.png">
+                                <img
+                                    class="path-74-tfkzmy" data-id="eb17a736-8063-4a68-b74e-bcd4c61ea39c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/path-64@1x.png"></div>
+                                    <div class="group-1-C61RwL" data-id="d3899c79-b6a6-4cb9-963c-962f3ca9ade3"><img class="rectangle-32-VyzZeT" data-id="89c6c89d-5cc7-45fb-a952-8351087f939d" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-32@1x.png">
+                                        <div
+                                            class="technology-VyzZeT argentumsans-regular-normal-ship-gray-17px" data-id="56eb27f8-348b-49ae-840c-da595b629eba">Technology</div>
+                                    </div><img class="rectangle-33-C61RwL" data-id="37fa77d2-f1f8-4bdb-8777-e9f9d9623cdd" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-33@1x.png">
+                                    <div
+                                        class="science-C61RwL argentumsans-regular-normal-concrete-17px" data-id="59a34fa7-1054-44a8-8727-02c7d16fa48b">Science</div>
+                                        <div class="group-3-C61RwL" data-id="137d268e-6ec9-43aa-b6cc-010475a26180"><img class="rectangle-34-hvAGCq" data-id="641c67c5-3e49-4ca2-a458-45a619fa42d3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-34-1@1x.png">
+                                            <div
+                                                class="education-hvAGCq argentumsans-regular-normal-ship-gray-17px" data-id="c49e7292-4806-4712-a67b-491ec8e92672">Education</div>
+                                        </div><img class="rectangle-34-C61RwL" data-id="7ea8eb99-e770-4665-8510-ef93b2bb5bc9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-34@1x.png">
+                                        <img
+                                            class="rectangle-38-C61RwL" data-id="7bc36c54-15b6-473f-b7fe-675c2cf0178f" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-38@1x.png">
+                                            <div class="sports-C61RwL argentumsans-regular-normal-concrete-17px" data-id="34bad26d-0745-4249-9974-13a795893c8f">Sports</div>
+                                            <div class="finances-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="d16ac58b-4aca-4bfa-acd2-67cc437caf6f">Finances</div><img class="rectangle-35-C61RwL" data-id="dc21069d-46b1-433e-8a28-8aa32faf9de2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-35@1x.png">
+                                            <img
+                                                class="rectangle-36-C61RwL" data-id="72340bff-94a7-47e6-a811-59b795d5c6d7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-36@1x.png"><img class="rectangle-37-C61RwL" data-id="e7b1a7fe-ad21-428a-afff-49d5387f2726" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-37@1x.png">
+                                                <img
+                                                    class="rectangle-40-C61RwL" data-id="6235d93c-24b1-4081-88dc-31bc6c16822a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-40@1x.png"><img class="rectangle-46-C61RwL" data-id="cca6f329-2d43-44cc-b775-6c72110e1ea1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-42@1x.png">
+                                                    <img
+                                                        class="rectangle-47-C61RwL" data-id="d07a9f00-e83e-4abf-ad20-d8de5deef7d5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-47@1x.png"><img class="rectangle-48-C61RwL" data-id="8ad17bd2-c95a-4e17-84d2-a7edd8809876" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-48@1x.png">
+                                                        <img
+                                                            class="rectangle-45-C61RwL" data-id="03e7e558-29a0-4a51-9c27-ecd2ff26e3a0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-45@1x.png"><img class="rectangle-41-C61RwL" data-id="22314b5a-2a07-4e83-ae9e-70793c37378f" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-41@1x.png">
+                                                            <img
+                                                                class="rectangle-42-C61RwL" data-id="57742260-175a-4017-ba5a-2c3c00ac7727" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-42@1x.png"><img class="rectangle-43-C61RwL" data-id="04e8bc49-3642-406b-9ea6-26694ddf76a7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-43@1x.png">
+                                                                <img
+                                                                    class="rectangle-44-C61RwL" data-id="b674d85a-216f-40bb-af1c-309975ff9903" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-44@1x.png"><img class="rectangle-39-C61RwL" data-id="d61d954b-583c-436d-9a00-e52a6d14c0af" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5fdab5967e98ec932bd4fe34/releases/5fdab76f73404247a4a3bf30/img/rectangle-39@1x.png">
+                                                                    <div
+                                                                        class="health-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="fb405896-9a90-4564-b0bd-3ea1d80fbe80">Health</div>
+                                                                        <div class="fitness-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="f66efdaf-46a8-43e4-a821-22bdfc9d7fac">Fitness</div>
+                                                                        <div class="entertainment-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="3dae175e-ac50-454e-970e-7dcc159fb811">Entertainment</div>
+                                                                        <div class="agriculture-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="d3f7b441-cdf8-4287-a8fc-48e44baca13f">Agriculture</div>
+                                                                        <div class="fashion-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="a0bbef81-6a74-41af-9b09-654d8e37e867">Fashion</div>
+                                                                        <div class="politics-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="25566323-9c92-4a65-a13b-0e82c00923be">Politics</div>
+                                                                        <div class="others-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="50cd35e9-219a-4d7a-abfe-0dd5c8729d5a">Others</div>
+                                                                        <div class="photography-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="332e2b0f-bcec-4377-b1d8-a6b75f897093">Photography</div>
+                                                                        <div class="travel-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="b11360a2-f1c2-460f-baa4-fee462f4dffe">Travel</div>
+                                                                        <div class="culture-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="ef62d1ff-d567-47ed-94ef-770a56ab6ec4">Culture</div>
+                                                                        <div class="nature-C61RwL argentumsans-regular-normal-concrete-17px" data-id="6d80e42d-de8b-4577-a59d-3225460736e6">Nature</div>
+                                                                        <div class="art-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="84269e85-bcd4-4f57-bcdc-b431889913d3">Art</div>
+                                                                        <div class="commerce-economic-C61RwL argentumsans-regular-normal-ship-gray-17px" data-id="7cf3bfbb-d0af-4540-b5ef-7b0c98584096">Commerce/Economic</div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <script src="launchpad-js/launchpad-banner.js" async></script>
+                                                                        <script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
+                                                                        <script>
+                                                                            AnimaisHidden = function(e) {
+                                                                                if (!(e instanceof HTMLElement)) return false;
+                                                                                if (getComputedStyle(e).display == "none") return true;
+                                                                                else if (e.parentNode && AnimaisHidden(e.parentNode)) return true;
+                                                                                return false;
+                                                                            };
+
+                                                                            AnimaloadAsyncSrcForTag = function(tag) {
+                                                                                var elements = document.getElementsByTagName(tag);
+                                                                                var toLoad = [];
+                                                                                for (var i = 0; i < elements.length; i++) {
+                                                                                    var e = elements[i];
+                                                                                    var src = e.getAttribute("src");
+                                                                                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                                                                                    if (loaded) continue;
+                                                                                    var asyncSrc = e.getAttribute("anima-src");
+                                                                                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                                                                                    if (AnimaisHidden(e)) continue;
+                                                                                    toLoad.push(e);
+                                                                                }
+                                                                                // Top first
+                                                                                toLoad.sort(function(a, b) {
+                                                                                    return AnimagetTop(a) - AnimagetTop(b)
+                                                                                });
+                                                                                for (var i = 0; i < toLoad.length; i++) {
+                                                                                    var e = toLoad[i];
+                                                                                    var asyncSrc = e.getAttribute("anima-src");
+                                                                                    e.setAttribute("src", asyncSrc);
+                                                                                }
+                                                                            };
+
+                                                                            AnimapauseHiddenVideos = function(tag) {
+                                                                                var elements = document.getElementsByTagName("video");
+                                                                                for (var i = 0; i < elements.length; i++) {
+                                                                                    var e = elements[i];
+                                                                                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                                                                                    var isHiddenStatus = AnimaisHidden(e);
+                                                                                    if (!isPlaying && !isHiddenStatus && e.getAttribute("autoplay") == "autoplay") {
+                                                                                        e.play();
+                                                                                    } else if (isPlaying && isHiddenStatus) {
+                                                                                        e.pause();
+                                                                                    }
+                                                                                }
+                                                                            };
+
+                                                                            AnimaloadAsyncSrc = function(tag) {
+                                                                                AnimaloadAsyncSrcForTag("img");
+                                                                                AnimaloadAsyncSrcForTag("iframe");
+                                                                                AnimaloadAsyncSrcForTag("video");
+                                                                                AnimapauseHiddenVideos();
+                                                                            };
+
+                                                                            var AnimagetTop = function(e) {
+                                                                                var top = 0;
+                                                                                do {
+                                                                                    top += e.offsetTop || 0;
+                                                                                    e = e.offsetParent;
+                                                                                } while (e);
+                                                                                return top;
+                                                                            };
+
+                                                                            // On load
+                                                                            AnimaloadAsyncSrc();
+
+                                                                            // On resize
+                                                                            Animaold_onResize = window.onresize;
+                                                                            Animanew_onResize = undefined;
+
+                                                                            AnimaupdateOnResize = function() {
+                                                                                if (Animanew_onResize == undefined ||
+                                                                                    window.onresize != Animanew_onResize) {
+                                                                                    Animanew_onResize = function(x) {
+                                                                                        if (Animaold_onResize != undefined) Animaold_onResize(x);
+                                                                                        AnimaloadAsyncSrc();
+                                                                                    }
+                                                                                    window.onresize = Animanew_onResize;
+                                                                                    // Make sure not overriden
+                                                                                    setTimeout(function() {
+                                                                                        AnimaupdateOnResize();
+                                                                                    }, 3000);
+                                                                                }
+                                                                            };
+                                                                            AnimaupdateOnResize();
+
+                                                                            // IE
+                                                                            setTimeout(function() {
+                                                                                AnimaloadAsyncSrc();
+                                                                            }, 200);
+                                                                        </script>
+</body>
+
+</html>

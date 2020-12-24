@@ -1,0 +1,426 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.argentumsans-light-dove-gray-17px {
+  color: var(--dove-gray);
+  font-family: "ArgentumSans-Light", Helvetica, Arial, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+.argentumsans-medium-concrete-23px {
+  color: var(--concrete);
+  font-family: "ArgentumSans-Medium", Helvetica, Arial, serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+}
+.argentumsans-regular-normal-concrete-16px {
+  color: var(--concrete);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.argentumsans-regular-normal-concrete-4px {
+  color: var(--concrete);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 4px;
+  font-style: normal;
+  font-weight: 400;
+}
+.argentumsans-regular-normal-dove-gray-16px {
+  color: var(--dove-gray);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.iphone-x-xs-11-pro-2 {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 794px;
+  width: 398px;
+}
+.iphone-x-xs-11-pro-2 .auto-flex {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: -7px;
+  min-height: 56px;
+  position: absolute;
+  top: 387px;
+  width: 156px;
+}
+.iphone-x-xs-11-pro-2 .ellipse-1 {
+  background-color: transparent;
+  height: 4.25%;
+  left: 0px;
+  position: absolute;
+  top: 95.75%;
+  width: 24.1%;
+}
+.iphone-x-xs-11-pro-2 .ellipse-2 {
+  background-color: transparent;
+  height: 7.76%;
+  left: 10.66%;
+  position: absolute;
+  top: 24.85%;
+  width: 5.7%;
+}
+.iphone-x-xs-11-pro-2 .ellipse-3 {
+  background-color: transparent;
+  height: 1.5%;
+  left: 13.2%;
+  position: absolute;
+  top: 29.33%;
+  width: 0.46%;
+}
+.iphone-x-xs-11-pro-2 .ellipse-4 {
+  background-color: transparent;
+  height: 7.7%;
+  left: 59.03%;
+  position: absolute;
+  top: 82.83%;
+  width: 5.93%;
+}
+.iphone-x-xs-11-pro-2 .ellipse-5 {
+  background-color: transparent;
+  height: 7.7%;
+  left: 0px;
+  position: absolute;
+  top: 4.03%;
+  width: 5.93%;
+}
+.iphone-x-xs-11-pro-2 .ellipse-6 {
+  background-color: transparent;
+  height: 7.7%;
+  left: 94.07%;
+  position: absolute;
+  top: 0px;
+  width: 5.93%;
+}
+.iphone-x-xs-11-pro-2 .group-5 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 432px;
+  margin-top: 17px;
+  position: relative;
+  width: 386px;
+}
+.iphone-x-xs-11-pro-2 .group-6 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 237px;
+  margin-right: 17.58px;
+  margin-top: 7px;
+  position: relative;
+  width: 349px;
+}
+.iphone-x-xs-11-pro-2 .info-bg {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 387px;
+  left: -2px;
+  position: absolute;
+  top: -3px;
+  width: 396px;
+}
+.iphone-x-xs-11-pro-2 .it-is-a-lo-t-here-con {
+  background-color: transparent;
+  height: 301px;
+  left: 10px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  top: 32px;
+  width: 368px;
+}
+.iphone-x-xs-11-pro-2 .nav {
+  background-color: var(--ship-gray);
+  height: 95px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 398px;
+}
+.iphone-x-xs-11-pro-2 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  position: relative;
+  width: 398px;
+}
+.iphone-x-xs-11-pro-2 .path-1 {
+  background-color: transparent;
+  height: 31.76%;
+  left: 26.71%;
+  position: absolute;
+  top: 26.18%;
+  width: 17.13%;
+}
+.iphone-x-xs-11-pro-2 .path-10 {
+  background-color: transparent;
+  height: 25.03%;
+  left: 14.76%;
+  position: absolute;
+  top: 36.56%;
+  width: 5.66%;
+}
+.iphone-x-xs-11-pro-2 .path-11 {
+  background-color: transparent;
+  height: 16.75%;
+  left: 6.83%;
+  position: absolute;
+  top: 24.57%;
+  width: 9.41%;
+}
+.iphone-x-xs-11-pro-2 .path-2 {
+  background-color: transparent;
+  height: 39.76%;
+  left: 31.52%;
+  position: absolute;
+  top: 26.18%;
+  width: 7.18%;
+}
+.iphone-x-xs-11-pro-2 .path-3 {
+  background-color: transparent;
+  height: 21.64%;
+  left: 6%;
+  position: absolute;
+  top: 39.01%;
+  width: 3.3%;
+}
+.iphone-x-xs-11-pro-2 .path-4 {
+  background-color: transparent;
+  height: 4.38%;
+  left: 18.99%;
+  position: absolute;
+  top: 59.94%;
+  width: 2.86%;
+}
+.iphone-x-xs-11-pro-2 .path-5 {
+  background-color: transparent;
+  height: 5.23%;
+  left: 4.92%;
+  position: absolute;
+  top: 93.3%;
+  width: 3.13%;
+}
+.iphone-x-xs-11-pro-2 .path-6 {
+  background-color: transparent;
+  height: 5.13%;
+  left: 14.71%;
+  position: absolute;
+  top: 93.3%;
+  width: 3.28%;
+}
+.iphone-x-xs-11-pro-2 .path-7 {
+  background-color: transparent;
+  height: 45.51%;
+  left: 5.23%;
+  position: absolute;
+  top: 49.29%;
+  width: 16.09%;
+}
+.iphone-x-xs-11-pro-2 .path-8 {
+  background-color: transparent;
+  height: 5.68%;
+  left: 9.31%;
+  position: absolute;
+  top: 30.43%;
+  width: 4.8%;
+}
+.iphone-x-xs-11-pro-2 .path-9 {
+  background-color: transparent;
+  height: 16.49%;
+  left: 6%;
+  position: absolute;
+  top: 33.29%;
+  width: 11.11%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-10 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 46.09%;
+  width: 31.46%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-11 {
+  background-color: var(--nobel);
+  height: 4.25%;
+  left: 56.35%;
+  position: absolute;
+  top: 56.35%;
+  width: 11.32%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-12 {
+  background-color: var(--gun-powder);
+  height: 45.16%;
+  left: 20.65%;
+  position: absolute;
+  top: 21.13%;
+  width: 27.05%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-15 {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 62px;
+  left: 230px;
+  position: absolute;
+  top: 382px;
+  width: 167px;
+}
+.iphone-x-xs-11-pro-2 .rectangle-16 {
+  background-color: transparent;
+  border-radius: 10px;
+  flex-shrink: 0;
+  height: 56px;
+  width: 156px;
+}
+.iphone-x-xs-11-pro-2 .rectangle-2 {
+  background-color: var(--concrete);
+  height: 61.29%;
+  left: 10.81%;
+  position: absolute;
+  top: 13.07%;
+  width: 83.72%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-3 {
+  background-color: var(--nobel);
+  height: 45.16%;
+  left: 18.91%;
+  opacity: 0.3;
+  position: absolute;
+  top: 23.57%;
+  width: 27.05%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-4 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 26.82%;
+  width: 21.62%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-5 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 29.83%;
+  width: 31.46%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-6 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 37.08%;
+  width: 21.62%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-7 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 49.09%;
+  width: 21.62%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-8 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 40.08%;
+  width: 31.46%;
+}
+.iphone-x-xs-11-pro-2 .rectangle-9 {
+  background-color: var(--gun-powder);
+  height: 1.63%;
+  left: 56.35%;
+  position: absolute;
+  top: 43.09%;
+  width: 31.46%;
+}
+.iphone-x-xs-11-pro-2 .sign-in-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  letter-spacing: 0px;
+  line-height: 4px;
+  margin-left: 134px;
+  margin-top: 0px;
+  min-height: 7px;
+  min-width: 24px;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.iphone-x-xs-11-pro-2 .sign-in-iZjIT4 {
+  background-color: transparent;
+  height: auto;
+  left: 286px;
+  letter-spacing: 0px;
+  line-height: 11px;
+  position: absolute;
+  text-align: center;
+  top: 403px;
+  white-space: nowrap;
+  width: auto;
+}
+.iphone-x-xs-11-pro-2 .sign-up {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: auto;
+  letter-spacing: 0px;
+  line-height: 6px;
+  margin-right: 16px;
+  margin-top: -36px;
+  min-height: 23px;
+  min-width: 68px;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+.iphone-x-xs-11-pro-2 .what-is-blah-blah {
+  background-color: transparent;
+  height: auto;
+  left: 6px;
+  letter-spacing: 0px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 14px;
+  white-space: nowrap;
+  width: auto;
+}
+.iphone-x-xs-11-pro-2 .wit-project {
+  background-color: transparent;
+  height: auto;
+  left: 7px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  position: absolute;
+  text-align: left;
+  top: 28px;
+  white-space: nowrap;
+  width: auto;
+}
+:root {
+  --concrete: rgba(242, 242, 242, 1);
+  --dove-gray: rgba(112, 112, 112, 1);
+  --gun-powder: rgba(63, 61, 86, 1);
+  --nobel: rgba(180, 180, 180, 1);
+  --ship-gray: rgba(62, 62, 62, 1);
+}

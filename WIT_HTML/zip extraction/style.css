@@ -1,0 +1,419 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.argentumsans-light-dove-gray-17px {
+  color: var(--dove-gray);
+  font-family: "ArgentumSans-Light", Helvetica, Arial, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+.argentumsans-medium-concrete-23px {
+  color: var(--concrete);
+  font-family: "ArgentumSans-Medium", Helvetica, Arial, serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+}
+.argentumsans-regular-normal-concrete-22px {
+  color: var(--concrete);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.argentumsans-regular-normal-dove-gray-20px {
+  color: var(--dove-gray);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.argentumsans-regular-normal-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: "ArgentumSans-Regular", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.home {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 1080px;
+  width: 1920px;
+}
+.home .auto-flex-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 379px;
+  justify-content: flex-start;
+  margin-left: 33px;
+  margin-top: 277px;
+  min-width: 1283px;
+  width: auto;
+}
+.home .ellipse-1 {
+  background-color: transparent;
+  bottom: 1px;
+  height: 13px;
+  left: 1px;
+  position: absolute;
+  width: 104px;
+}
+.home .ellipse-2 {
+  background-color: transparent;
+  height: 25px;
+  left: 46px;
+  position: absolute;
+  top: calc(26.94% - 7px);
+  width: 25px;
+}
+.home .ellipse-3 {
+  background-color: transparent;
+  height: 5px;
+  left: 57px;
+  position: absolute;
+  top: calc(29.77% - 1px);
+  width: 2px;
+}
+.home .ellipse-4 {
+  background-color: transparent;
+  bottom: 30px;
+  height: 24px;
+  position: absolute;
+  right: calc(37.25% - 10px);
+  width: 26px;
+}
+.home .ellipse-5 {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 13px;
+  width: 26px;
+}
+.home .ellipse-6 {
+  background-color: transparent;
+  height: 24px;
+  position: absolute;
+  right: 1px;
+  top: 0px;
+  width: 26px;
+}
+.home .info-bg {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 379px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 664px;
+}
+.home .it-is-a-lo-t-here-con {
+  background-color: transparent;
+  height: 167px;
+  left: 50px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  top: 88px;
+  width: 561px;
+}
+.home .nav {
+  background-color: var(--ship-gray);
+  height: 80px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+}
+.home .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 80px;
+  margin-right: 2px;
+  position: relative;
+  width: 1920px;
+}
+.home .overlap-group1-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 379px;
+  margin-left: 188px;
+  position: relative;
+  width: 664px;
+}
+.home .path-1 {
+  background-color: transparent;
+  height: 101px;
+  left: calc(32.23% - 24px);
+  position: absolute;
+  top: calc(38.36% - 39px);
+  width: 74px;
+}
+.home .path-10 {
+  background-color: transparent;
+  height: 79px;
+  left: 64px;
+  position: absolute;
+  top: calc(48.76% - 39px);
+  width: 24px;
+}
+.home .path-11 {
+  background-color: transparent;
+  height: 53px;
+  left: 29px;
+  position: absolute;
+  top: calc(29.52% - 16px);
+  width: 41px;
+}
+.home .path-2 {
+  background-color: transparent;
+  height: 126px;
+  left: calc(33.96% - 11px);
+  position: absolute;
+  top: calc(43.45% - 55px);
+  width: 31px;
+}
+.home .path-3 {
+  background-color: transparent;
+  height: 69px;
+  left: 26px;
+  position: absolute;
+  top: calc(49.77% - 34px);
+  width: 14px;
+}
+.home .path-4 {
+  background-color: transparent;
+  bottom: calc(37.31% - 5px);
+  height: 14px;
+  left: calc(19.55% - 2px);
+  position: absolute;
+  width: 12px;
+}
+.home .path-5 {
+  background-color: transparent;
+  bottom: 5px;
+  height: 17px;
+  left: 21px;
+  position: absolute;
+  width: 14px;
+}
+.home .path-6 {
+  background-color: transparent;
+  bottom: 5px;
+  height: 16px;
+  left: 63px;
+  position: absolute;
+  width: 14px;
+}
+.home .path-7 {
+  background-color: transparent;
+  bottom: 16px;
+  height: 144px;
+  left: 23px;
+  position: absolute;
+  width: 69px;
+}
+.home .path-8 {
+  background-color: transparent;
+  height: 18px;
+  left: 40px;
+  position: absolute;
+  top: calc(32.26% - 6px);
+  width: 21px;
+}
+.home .path-9 {
+  background-color: transparent;
+  height: 52px;
+  left: 26px;
+  position: absolute;
+  top: calc(39.86% - 21px);
+  width: 48px;
+}
+.home .rectangle-1 {
+  background-color: transparent;
+  border-radius: 10px;
+  height: calc(100% + 18px);
+  left: -7px;
+  position: absolute;
+  top: -6px;
+  width: calc(100% + 18px);
+}
+.home .rectangle-10 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: 53px;
+  top: calc(46.85% - 2px);
+  width: 136px;
+}
+.home .rectangle-11 {
+  background-color: var(--nobel);
+  bottom: calc(41.15% - 6px);
+  height: 13px;
+  position: absolute;
+  right: calc(36.46% - 18px);
+  width: 49px;
+}
+.home .rectangle-12 {
+  background-color: var(--gun-powder);
+  height: 143px;
+  left: calc(28.31% - 33px);
+  position: absolute;
+  top: calc(38.53% - 55px);
+  width: 117px;
+}
+.home .rectangle-2 {
+  background-color: var(--concrete);
+  height: 194px;
+  left: 47px;
+  position: absolute;
+  top: 41px;
+  width: calc(100% - 70px);
+}
+.home .rectangle-3 {
+  background-color: var(--nobel);
+  height: 143px;
+  left: calc(25.91% - 30px);
+  opacity: 0.3;
+  position: absolute;
+  top: calc(42.98% - 62px);
+  width: 117px;
+}
+.home .rectangle-4 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: calc(28.11% - 26px);
+  top: calc(27.27% - 1px);
+  width: 93px;
+}
+.home .rectangle-5 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: 53px;
+  top: calc(30.32% - 2px);
+  width: 136px;
+}
+.home .rectangle-6 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: calc(28.11% - 26px);
+  top: calc(37.69% - 2px);
+  width: 93px;
+}
+.home .rectangle-7 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: calc(28.11% - 26px);
+  top: calc(49.9% - 3px);
+  width: 93px;
+}
+.home .rectangle-8 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: 53px;
+  top: calc(40.75% - 2px);
+  width: 136px;
+}
+.home .rectangle-9 {
+  background-color: var(--gun-powder);
+  height: 5px;
+  position: absolute;
+  right: 53px;
+  top: calc(43.8% - 2px);
+  width: 136px;
+}
+.home .sign-in {
+  background-color: transparent;
+  bottom: calc(27.78% - 9px);
+  height: 32px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  position: absolute;
+  right: calc(49.46% - 34px);
+  text-align: center;
+  white-space: nowrap;
+  width: 68px;
+}
+.home .sign-in-button {
+  background-color: transparent;
+  height: 50px;
+  left: 355px;
+  position: absolute;
+  top: 275px;
+  width: 254px;
+}
+.home .sign-up {
+  background-color: transparent;
+  bottom: calc(27.78% - 9px);
+  height: 32px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  position: absolute;
+  right: calc(49.43% - 39px);
+  text-align: center;
+  white-space: nowrap;
+  width: 78px;
+}
+.home .sign-up-button {
+  background-color: transparent;
+  height: 50px;
+  left: 50px;
+  position: absolute;
+  top: 275px;
+  width: 254px;
+}
+.home .undrawknowledgeg5gf {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 317px;
+  margin-bottom: 13px;
+  position: relative;
+  width: 431px;
+}
+.home .what-is-blah-blah {
+  background-color: transparent;
+  height: auto;
+  left: 50px;
+  letter-spacing: 0px;
+  line-height: 19px;
+  position: absolute;
+  text-align: left;
+  top: 53px;
+  white-space: nowrap;
+  width: auto;
+}
+.home .wit-project {
+  background-color: transparent;
+  height: auto;
+  left: 131px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  top: 28px;
+  white-space: nowrap;
+  width: auto;
+}
+:root {
+  --concrete: rgba(242, 242, 242, 1);
+  --dove-gray: rgba(112, 112, 112, 1);
+  --gun-powder: rgba(63, 61, 86, 1);
+  --nobel: rgba(180, 180, 180, 1);
+  --ship-gray: rgba(62, 62, 62, 1);
+}
